@@ -1,0 +1,15 @@
+host: gabe565.com
+defaultUser: gabe565
+packages:
+  - name: ansi2txt
+  - name: gones
+  - name: moreutils
+  - name: nightscout-menu-bar
+  - name: portfolio
+  - name: pwgen
+    repo: pwgen-go
+  - name: ransom
+  - name: relax-sounds
+  - name: subcablemap-dl
+  - name: spinners
+    repo: go-spinners
