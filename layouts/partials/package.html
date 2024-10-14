@@ -1,0 +1,10 @@
+            <tr>
+              <td>{{ partial "pkg.html" . }}</td>
+              <td><a href="https://{{ partial "repo.html" . }}">{{ partial "repo.html" . }}</a></td>
+              <td>
+                <a href="https://{{ partial "doc.html" . }}">
+                  {{- $image := resources.GetRemote "https://img.shields.io/badge/godoc-reference-blue?style=for-the-badge&color=1EAEDB" }}
+                  <img src="{{ $image.RelPermalink }}" alt="GoDoc" />
+                </a>
+              </td>
+            </tr>
