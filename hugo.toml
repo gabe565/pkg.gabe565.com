@@ -1,0 +1,12 @@
+baseURL = 'https://gabe565.com/'
+languageCode = 'en-us'
+title = 'Go Packages by gabe565'
+theme = ["github.com/markdumay/hugo-theme-vanity"]
+author = "Gabe Cook"
+copyright = "Copyright © Gabe Cook"
+
+[pagination]
+pagerSize = 100
+
+[params]
+redirect = true
