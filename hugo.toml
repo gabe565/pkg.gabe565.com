@@ -5,8 +5,20 @@ theme = ["github.com/markdumay/hugo-theme-vanity"]
 author = "Gabe Cook"
 copyright = "Copyright © Gabe Cook"
 
+disableAliases = true # We do redirects via Netlify's _redirects file
+
 [pagination]
 pagerSize = 100
 
 [params]
 redirect = true
+
+[mediaTypes.'text/redirects']
+
+[outputFormats.REDIRECTS]
+mediaType = 'text/redirects'
+baseName = '_redirects'
+notAlternative = true
+
+[outputs]
+home = ['HTML', 'REDIRECTS', 'RSS']

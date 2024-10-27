@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects. See https://developers.cloudflare.com/pages/configuration/redirects/
+{{- range $p := .Site.Pages }}
+{{- if in $p.Params.tags "package" }}
+{{ $p.Path }}/* {{ $p.RelPermalink }} 200
+{{- end }}
+{{- range $alias := $p.Aliases }}
+{{ $alias }} {{ $p.RelPermalink }}
+{{- end }}
+{{- end }}
