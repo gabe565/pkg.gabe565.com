@@ -1,7 +1,7 @@
 baseURL = 'https://gabe565.com/'
 languageCode = 'en-us'
 title = 'Go Packages by gabe565'
-theme = ["github.com/markdumay/hugo-theme-vanity"]
+theme = ["github.com/gabe565/hugo-theme-vanity"]
 author = "Gabe Cook"
 copyright = "Copyright © Gabe Cook"
 
